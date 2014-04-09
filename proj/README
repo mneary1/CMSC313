@@ -1,0 +1,11 @@
+All projects use 32-bit NASM.
+
+to get object code type:
+nasm -f elf -g -F stabs <file_name>.asm
+
+to link type:
+ld -o <file_name> <file_name>.o -melf_i386
+
+to run the program type:
+<file_name>
+
